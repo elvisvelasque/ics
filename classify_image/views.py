@@ -8,6 +8,7 @@ from django.core.files.temp import NamedTemporaryFile
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
+from django.template import context
 
 MAX_K = 10
 
@@ -61,7 +62,7 @@ def classify_api(request):
 
 
 def classify(request):
-    return render(request, 'classify.html', {})
+    return render(request, 'classify.html', context={})
 
 
 # noinspection PyUnresolvedReferences
