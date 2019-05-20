@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-ROOT_URLCONF = 'tf_inception.urls'
+ROOT_URLCONF = 'tf_inception.__init__'
 
 TEMPLATES = [
     {
